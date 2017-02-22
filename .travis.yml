@@ -1,0 +1,20 @@
+sudo: false  # means that the build doesn't need super user privelages
+cache: pip  # means that packages can be cached from pip
+
+language: python
+
+python:
+    - "3.4"
+
+env:
+    - TOXENV=manifest
+    - TOXENV=docs
+
+install:
+    - pip install tox
+
+script:
+    - tox
+
+    Contact GitHub API Training Shop Blog About
+
